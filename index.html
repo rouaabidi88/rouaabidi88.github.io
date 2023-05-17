@@ -2,6 +2,14 @@
 <html>
 
 <head>
+    <script>
+        var userAgent = navigator.userAgent.toLowerCase();
+        var isMobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+        if (isMobile) {
+            window.location.href = "mobile.html";
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Roua Abidi Portfolio</title>
